@@ -15,7 +15,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/api/auth/register', formData);
+            const response = await axios.post('/api/auth/register', formData);
             toast.success(response.data.message, { style: { background: '#10b981', color: '#fff' } });
             navigate('/login');
         } catch (error) {

@@ -24,10 +24,15 @@ const connectDB = async () => {
 };
 
 connectDB().then(() => {
-    app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
-    });
+    // Only listen if not on Vercel
+    if (process.env.NODE_ENV !== 'production') {
+        app.listen(PORT, () => {
+            console.log(`Server is running on port ${PORT}`);
+        });
+    }
 });
 
 app.use("/api", userRoute);
 app.use("/api/auth", authRoute);
+
+export default app;

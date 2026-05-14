@@ -17,7 +17,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/api/auth/login', credentials);
+            const response = await axios.post('/api/auth/login', credentials);
             login(response.data.token, response.data.admin);
             toast.success("Welcome back!", { style: { background: '#10b981', color: '#fff' } });
             navigate('/');

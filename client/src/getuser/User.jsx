@@ -12,7 +12,7 @@ const User = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/users?search=${searchQuery}`);
+                const response = await axios.get(`/api/users?search=${searchQuery}`);
                 setUsers(response.data);
             } catch (error) {
                 // Ignore 404s when searching returns nothing
@@ -29,7 +29,7 @@ const User = () => {
 
     const deleteUser = async (userId) => {
         try {
-            const response = await axios.delete(`http://localhost:8000/api/delete/user/${userId}`);
+            const response = await axios.delete(`/api/delete/user/${userId}`);
             setUsers((prevUsers) => prevUsers.filter((user) => user._id !== userId));
             toast.success(response.data.message, {
                 position: "top-right",
