@@ -1,10 +1,13 @@
 # 🚀 NexusManager - Full Stack MERN Application
 
+[![Vercel Deployment](https://img.shields.io/badge/Deployment-Live-success?style=for-the-badge&logo=vercel)](https://nexus-manager-mern.vercel.app/)
+[![MERN Stack](https://img.shields.io/badge/Stack-MERN-blue?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/mern-stack)
+
 A premium, modern SaaS Dashboard built with the **MERN Stack** (MongoDB, Express, React, Node.js). 
 
-This project features a completely responsive, dark-mode glassmorphism design system, secure JWT Authentication, realtime metrics, robust search capabilities, and native Excel exporting!
+**🔗 Live Demo:** [https://nexus-manager-mern.vercel.app/](https://nexus-manager-mern.vercel.app/)
 
-![NexusManager Dashboard](https://i.imgur.com/placeholders.png)
+---
 
 ## ✨ Features
 
@@ -20,7 +23,7 @@ This project features a completely responsive, dark-mode glassmorphism design sy
 - **Frontend**: React.js, React Router, Axios, React Hot Toast, SheetJS (xlsx)
 - **Backend**: Node.js, Express.js, Mongoose, JSON Web Tokens (JWT), BcryptJS
 - **Styling**: Vanilla CSS (Custom Design System)
-- **Deployment Ready**: Fully configured for Vercel serverless deployment!
+- **Deployment**: Configured for Vercel Serverless (Monorepo setup)
 
 ## 🚀 Getting Started
 
@@ -67,9 +70,13 @@ Make sure you have Node.js and MongoDB installed (or a MongoDB Atlas URI).
    ```
 3. Open your browser to `http://localhost:3000`.
 
-## ☁️ Deploying to Vercel
+## ☁️ Deployment
 
-This application is configured as a Monorepo for Vercel deployment.
+This application is optimized for Vercel. 
 1. Connect this repository to your Vercel account.
-2. Vercel will automatically read the `vercel.json` and deploy both the React frontend and the Express serverless backend!
-3. Don't forget to add your `.env` variables in the Vercel dashboard.
+2. The `vercel.json` at the root handles the monorepo routing.
+3. Set your `MONGO_URL` and `JWT_SECRET` in the Vercel Project Settings -> Environment Variables.
+
+---
+
+Built with ❤️ by [Pratham](https://github.com/PrathamKhawani)
