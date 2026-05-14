@@ -1,0 +1,40 @@
+.addUser {
+    background-color: white;
+    width: 25%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+.addUser h3 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: darkcyan;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.addUser .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.addUser .inputGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.addUser .inputGroup input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.addUser button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
